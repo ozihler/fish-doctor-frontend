@@ -13,5 +13,7 @@ export class User {
     expect(this.overviewPage.getMenu()).toBeDefined();
     expect(this.overviewPage.getHomeText()).toEqual("Home");
     expect(this.overviewPage.getContactText()).toEqual("Contact");
+    expect(this.overviewPage.getGalleriesText()).toEqual("Galleries");
+    expect(this.overviewPage.getIllnessesText()).toEqual("Illnesses");
    }
 }

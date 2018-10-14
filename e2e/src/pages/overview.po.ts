@@ -16,4 +16,12 @@ export class OverviewPage {
   getContactText() {
     return element(by.id("contact")).getText();
   }
+
+  getGalleriesText() {
+    return element(by.id("galleries")).getText();
+  }
+
+  getIllnessesText() {
+    return element(by.id("illnesses")).getText();
+  }
 }
