@@ -1,14 +1,16 @@
-import { AppPage } from './app.po';
+import {User} from "./pageactors/User";
+import {OverviewPage} from "./pages/overview.po";
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+   let user: User;
+
 
   beforeEach(() => {
-    page = new AppPage();
+    user = new User(new OverviewPage());
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to fish-doctor-app!');
+  it('should display a menu', () => {
+    user.navigatesToOverview();
+    user.seesMenu();
   });
 });
